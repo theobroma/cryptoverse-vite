@@ -20,6 +20,22 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'react/react-in-jsx-scope': 0,
+    'import/no-default-export': 'warn',
+    'import/no-unresolved': 'error',
+    'import/prefer-default-export': 0,
+
+    'react/display-name': '0', // tmp!!! remove
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
+    'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
+    'react/jsx-props-no-spreading': 0,
+    'react/prop-types': 0, // Since we do not use prop-types
+    'react/react-in-jsx-scope': 0, // Since React 18 "react-jsx"
+    'react/require-default-props': 0, // Since we do not use prop-types
   },
 };
