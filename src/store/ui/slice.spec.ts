@@ -1,13 +1,9 @@
 // import { LanguageEnum } from '@/enums/language.enum';
 // import { ThemeEnum } from '@/enums/theme.enum';
 
+import { LanguageEnum } from '../../enums/language.enum';
 import { ThemeEnum } from '../../enums/theme.enum';
-import {
-  setThemeAC,
-  // setLanguageAC,
-  uiSlice,
-  uiInitialState,
-} from './slice';
+import { setThemeAC, uiSlice, uiInitialState, setLanguageAC } from './slice';
 
 const uiReducer = uiSlice.reducer;
 
@@ -22,9 +18,9 @@ describe('counter reducer sync actions', () => {
     expect(actual.theme).toEqual(newTheme);
   });
 
-  // it('should handle setLanguage', () => {
-  //   const newLanguage = LanguageEnum.EN;
-  //   const actual = uiReducer(uiInitialState, setLanguageAC(newLanguage));
-  //   expect(actual.language).toEqual(newLanguage);
-  // });
+  it('should handle setLanguage', () => {
+    const newLanguage = LanguageEnum.EN;
+    const actual = uiReducer(uiInitialState, setLanguageAC(newLanguage));
+    expect(actual.language).toEqual(newLanguage);
+  });
 });
