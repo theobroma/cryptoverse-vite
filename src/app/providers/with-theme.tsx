@@ -4,10 +4,13 @@ import { PaletteMode } from '@mui/material';
 import { red } from '@mui/material/colors';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeEnum } from '../../enums/theme.enum';
+import { useAppSelector } from '../../store/configureStore';
+import { themeSelector } from '../../store/ui/selectors';
 
-import { ThemeEnum } from '@/enums/theme.enum';
-import { useAppSelector } from '@/store/configureStore';
-import { themeSelector } from '@/store/ui/selectors';
+// import { ThemeEnum } from '@/enums/theme.enum';
+// import { useAppSelector } from '@/store/configureStore';
+// import { themeSelector } from '@/store/ui/selectors';
 
 const FRONT_COLORS = {
   error: {
