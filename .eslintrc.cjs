@@ -24,7 +24,7 @@ module.exports = {
     'import/no-unresolved': 'error',
     'import/prefer-default-export': 0,
 
-    'react/display-name': '0', // tmp!!! remove
+    'react/display-name': 0, // tmp!!! remove
     'react/function-component-definition': [
       2,
       {
