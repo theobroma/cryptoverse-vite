@@ -1,12 +1,16 @@
 import axios from 'axios';
 
-// export const API_KEY = process.env.REACT_APP_API_KEY;
-export const API_URL = 'https://api.themoviedb.org/3';
+// const API_KEY = process.env.REACT_APP_API_KEY;
+// const API_HOST = process.env.REACT_APP_CRYPTO_RAPIDAPI_HOST;
+
+export const API_URL = 'https://coinranking1.p.rapidapi.com';
+const API_HOST = 'coinranking1.p.rapidapi.com';
+const API_KEY = 'xxxxxxxxxxxxxx-xxxxxxxxxxx-xxxxxxxxxxxxxx';
 
 export const axiosInstance = axios.create({
   baseURL: API_URL,
-  params: {
-    // api_key: API_KEY,
-    // language: 'uk-UA',
+  headers: {
+    'x-rapidapi-key': API_KEY,
+    'x-rapidapi-host': API_HOST,
   },
 });

@@ -1,10 +1,9 @@
 import { Container } from '@mui/material';
+import { HomeGlobalStats } from './home-global-stats/home-global-stats';
 
 const HomePage = () => (
   <Container maxWidth="lg">
-    <div>
-      <span>HomePage</span>
-    </div>
+    <HomeGlobalStats />
   </Container>
 );
 
