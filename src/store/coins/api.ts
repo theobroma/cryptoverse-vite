@@ -1,12 +1,9 @@
 import { emptySplitApi } from '../../shared/api/emptySplitApi';
+import { CoinsResponseType } from '../../types';
 
 const cryptosAPI = emptySplitApi.injectEndpoints({
   endpoints: (builder) => ({
-    getCryptos: builder.query<
-      any,
-      // CreditsResponseType,
-      { count: number }
-    >({
+    getCryptos: builder.query<CoinsResponseType, { count: number }>({
       query: ({ count }) => ({
         url: `/coins?limit=${count}`,
         method: 'get',
