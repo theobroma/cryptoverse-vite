@@ -53,7 +53,7 @@ export const PersistentDrawerLeft = ({ children }: PropsWithChildren) => {
               }}
             >
               <Typography variant="h6" noWrap component="div">
-                MovieDB App
+                Cryptoverse
               </Typography>
             </RouterLink>
             <Box sx={{ flexGrow: 1 }} />
