@@ -12,6 +12,8 @@ export const HomeTopCryptos = () => {
     useGetCryptosQuery({ count: 10 });
   const coins = data?.data?.coins || [];
 
+  console.log('coins :>> ', coins);
+
   return (
     <>
       <Grid item xs={12}>
@@ -39,7 +41,7 @@ export const HomeTopCryptos = () => {
           </RouterLink>
         </Box>
       </Grid>
-      <CryptoList coins={coins} />
+      <CryptoList coins={coins} isLoading={isLoading} />
     </>
   );
 };
