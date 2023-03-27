@@ -41,7 +41,7 @@ export const HomeTopCryptos = () => {
           </RouterLink>
         </Box>
       </Grid>
-      <CryptoList coins={coins} isLoading={isLoading} />
+      <CryptoList coins={coins} isFetching={isFetching} />
     </>
   );
 };

@@ -9,15 +9,15 @@ import { CryptoCard } from '../../entities/crypto-card/crypto-card';
 
 interface Props {
   coins: CoinType[];
-  isLoading: boolean;
+  isFetching: boolean;
 }
 
-export const CryptoList = ({ coins, isLoading }: Props) => {
+export const CryptoList = ({ coins, isFetching }: Props) => {
   return (
-    <>
+    <Grid container spacing={2}>
       {coins.map((coin, idx: number) => (
         <Grid item xs={12} md={6} lg={4} key={nanoid()}>
-          {isLoading ? (
+          {isFetching ? (
             <CryptoCardSkeleton />
           ) : (
             <RouterLink
@@ -31,13 +31,9 @@ export const CryptoList = ({ coins, isLoading }: Props) => {
             </RouterLink>
           )}
           {/* DON'T delete. usefull for skeleton debug */}
-          {/* {idx % 2 === 0 ? (
-              <CryptoCard coin={coin} />
-            ) : (
-              <CryptoCardSkeleton />
-            )} */}
+          {/* {idx % 2 === 0 ? <CryptoCard coin={coin} /> : <CryptoCardSkeleton />} */}
         </Grid>
       ))}
-    </>
+    </Grid>
   );
 };
