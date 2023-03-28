@@ -29,7 +29,7 @@ export const ThemeMenu = () => {
 
   const handleMenuItemClick = (
     event: React.MouseEvent<HTMLElement>,
-    value: BaseOptionInterface['value']
+    value: BaseOptionInterface['value'],
   ) => {
     dispatch(setThemeAC(value));
     setAnchorEl(null);
@@ -45,7 +45,7 @@ export const ThemeMenu = () => {
 
   useUpdateEffect(() => {
     const labelText = themeOptions.find(
-      ({ value }) => value === currentTheme
+      ({ value }) => value === currentTheme,
     )?.label;
     enqueueSnackbar(`Theme changed to ${labelText}`, {
       variant: 'warning',

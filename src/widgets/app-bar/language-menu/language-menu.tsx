@@ -29,7 +29,7 @@ export const LanguageMenu = () => {
 
   const handleMenuItemClick = (
     event: React.MouseEvent<HTMLElement>,
-    value: BaseOptionInterface['value']
+    value: BaseOptionInterface['value'],
   ) => {
     dispatch(setLanguageAC(value));
     setAnchorEl(null);
@@ -45,7 +45,7 @@ export const LanguageMenu = () => {
 
   useUpdateEffect(() => {
     const labelText = languageMenuOptions.find(
-      ({ value }) => value === currentLanguage
+      ({ value }) => value === currentLanguage,
     )?.label;
     enqueueSnackbar(`Language changed to ${labelText}`, {
       variant: 'warning',

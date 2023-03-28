@@ -18,11 +18,40 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'prettier',
+    'eslint-plugin-import-helpers',
+    'hooks',
+  ],
   rules: {
     'import/no-default-export': 'warn',
     'import/no-unresolved': 'error',
     'import/prefer-default-export': 0,
+
+    'hooks/sort': [
+      2,
+      {
+        groups: [
+          // 'useReducer',
+          // 'useContext',
+          // 'useDispatch',
+          'useAppDispatch',
+          'useNavigate',
+          'useSnackbar',
+          'useStyles',
+          'useState',
+          'useRef',
+          // 'useSelector',
+          'useAppSelector',
+          'useCallback',
+          'useEffect',
+        ],
+      },
+    ],
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
 
     'react/display-name': 0, // tmp!!! remove
     'react/function-component-definition': [
