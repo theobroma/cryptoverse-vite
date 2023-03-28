@@ -87,6 +87,34 @@ module.exports = {
       { allowSameFolder: true, rootDir: 'src', prefix: '@' },
     ],
     'no-restricted-exports': 0, // Nothing to restrict.
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: 'console',
+            importNames: ['error'],
+          },
+          {
+            name: 'tss-react/mui',
+            importNames: ['useStyles'],
+            message: 'Use useStyles imported from local file *.styles',
+          },
+          {
+            name: 'react-redux',
+            importNames: ['useSelector', 'useDispatch'],
+            message:
+              'Use typed hooks `useAppDispatch` and `useAppSelector` instead.',
+          },
+        ],
+        patterns: [
+          {
+            group: ['@/types/*'],
+            message: 'Please use import from index "@/types" instead',
+          },
+        ],
+      },
+    ],
     'no-underscore-dangle': 0,
 
     'hooks/sort': [
