@@ -11,7 +11,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -29,6 +28,12 @@ module.exports = {
     'import/no-default-export': 'warn',
     'import/no-unresolved': 'error',
     'import/prefer-default-export': 0,
+
+    'no-console': 0,
+    // 'no-param-reassign': 0, // check overrides
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'no-restricted-exports': 0, // Nothing to restrict.
+    'no-underscore-dangle': 0,
 
     'hooks/sort': [
       2,
@@ -67,4 +72,11 @@ module.exports = {
     'react/react-in-jsx-scope': 0, // Since React 18 "react-jsx"
     'react/require-default-props': 0, // Since we do not use prop-types
   },
+  overrides: [
+    {
+      files: ['src/**/*.slice.ts', 'src/**/slice.ts'],
+      // avoid state param assignment
+      rules: { 'no-param-reassign': ['error', { props: false }] },
+    },
+  ],
 };
