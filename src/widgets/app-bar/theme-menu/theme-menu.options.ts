@@ -1,8 +1,5 @@
-// import { ThemeEnum } from '@/enums/theme.enum';
-// import { BaseOptionInterface } from '@/types';
-
-import { ThemeEnum } from '../../../enums/theme.enum';
-import { BaseOptionInterface } from '../../../types';
+import { ThemeEnum } from '@/enums/theme.enum';
+import { BaseOptionInterface } from '@/types';
 
 export const themeOptions: BaseOptionInterface[] = [
   {

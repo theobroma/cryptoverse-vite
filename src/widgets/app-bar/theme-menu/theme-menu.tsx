@@ -8,15 +8,11 @@ import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import { Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
 
-// import { useAppDispatch, useAppSelector } from '@/store/configureStore';
-// import { themeSelector } from '@/store/ui/selectors';
-// import { setThemeAC } from '@/store/ui/slice';
-// import { BaseOptionInterface } from '@/types';
+import { useAppDispatch, useAppSelector } from '@/store/configureStore';
+import { themeSelector } from '@/store/ui/selectors';
+import { setThemeAC } from '@/store/ui/slice';
+import { BaseOptionInterface } from '@/types';
 
-import { useAppDispatch, useAppSelector } from '../../../store/configureStore';
-import { themeSelector } from '../../../store/ui/selectors';
-import { setThemeAC } from '../../../store/ui/slice';
-import { BaseOptionInterface } from '../../../types';
 import { themeOptions } from './theme-menu.options';
 
 export const ThemeMenu = () => {

@@ -23,6 +23,7 @@ module.exports = {
     'prettier',
     'eslint-plugin-import-helpers',
     'hooks',
+    'no-relative-import-paths',
   ],
   settings: {
     react: {
@@ -56,6 +57,10 @@ module.exports = {
     'no-console': 0,
     // 'no-param-reassign': 0, // check overrides
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'no-relative-import-paths/no-relative-import-paths': [
+      'error',
+      { allowSameFolder: true, rootDir: 'src', prefix: '@' },
+    ],
     'no-restricted-exports': 0, // Nothing to restrict.
     'no-underscore-dangle': 0,
 

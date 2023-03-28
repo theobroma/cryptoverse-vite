@@ -1,8 +1,5 @@
-// import { LanguageEnum } from '@/enums/language.enum';
-// import { BaseOptionInterface } from '@/types';
-
-import { LanguageEnum } from '../../../enums/language.enum';
-import { BaseOptionInterface } from '../../../types';
+import { LanguageEnum } from '@/enums/language.enum';
+import { BaseOptionInterface } from '@/types';
 
 export const languageMenuOptions: BaseOptionInterface[] = [
   {

@@ -1,12 +1,10 @@
 import { BaseQueryFn } from '@reduxjs/toolkit/query/react';
 import { AxiosError } from 'axios';
 
-import { waitForMe } from '../utils/waitforme';
+import { waitForMe } from '@/shared/utils/waitforme';
+
 import { axiosInstance } from './connection';
 import { ZodSchemasValidation } from './utils/zod-schemas.validation';
-
-// import { axiosInstance } from '@/shared/api/connection';
-// import { waitForMe } from '@/shared/utils/waitforme';
 
 export const baseQuery =
   ({ baseUrl }: { baseUrl: string } = { baseUrl: '' }): BaseQueryFn<any> =>

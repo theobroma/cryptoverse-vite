@@ -2,9 +2,9 @@ import millify from 'millify';
 
 import { Box, Grid, Typography } from '@mui/material';
 
-import { StatsBlock } from '../../../entities/stats-block/stats-block';
-import { AppError } from '../../../shared/uikit/app-error/app-error';
-import { useGetCryptosQuery } from '../../../store/coins/api';
+import { StatsBlock } from '@/entities/stats-block/stats-block';
+import { AppError } from '@/shared/uikit/app-error/app-error';
+import { useGetCryptosQuery } from '@/store/coins/api';
 
 export const HomeGlobalStats = () => {
   const { data, error, isError, isFetching, isLoading, isSuccess } =

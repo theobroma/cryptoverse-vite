@@ -12,8 +12,9 @@ import { useTheme } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-import { BackToTop } from '../../shared/uikit/back-to-top/back-to-top';
-import { HideOnScroll } from '../../shared/uikit/hide-on-scroll/hide-on-scroll';
+import { BackToTop } from '@/shared/uikit/back-to-top/back-to-top';
+import { HideOnScroll } from '@/shared/uikit/hide-on-scroll/hide-on-scroll';
+
 import { AppBar, DrawerHeader, drawerWidth, Main } from './app-bar.styled';
 import { LanguageMenu } from './language-menu/language-menu';
 import { NestedList } from './nested-list/nested-list';

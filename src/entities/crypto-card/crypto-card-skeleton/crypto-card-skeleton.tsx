@@ -1,6 +1,10 @@
 import { Skeleton, Divider } from '@mui/material';
 
-import { Item, CardBox1, CardBox2 } from '../crypto-card.styles';
+import {
+  Item,
+  CardBox1,
+  CardBox2,
+} from '@/entities/crypto-card/crypto-card.styles';
 
 export const CryptoCardSkeleton = () => (
   <Item>

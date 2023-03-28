@@ -1,5 +1,5 @@
-import { emptySplitApi } from '../../shared/api/emptySplitApi';
-import { CoinsResponseType } from '../../types';
+import { emptySplitApi } from '@/shared/api/emptySplitApi';
+import { CoinsResponseType } from '@/types';
 
 const cryptosAPI = emptySplitApi.injectEndpoints({
   endpoints: (builder) => ({

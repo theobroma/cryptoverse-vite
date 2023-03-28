@@ -3,9 +3,9 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { Grid } from '@mui/material';
 
-import { CryptoCard } from '../../entities/crypto-card/crypto-card';
-import { CryptoCardSkeleton } from '../../entities/crypto-card/crypto-card-skeleton/crypto-card-skeleton';
-import { CoinType } from '../../types';
+import { CryptoCard } from '@/entities/crypto-card/crypto-card';
+import { CryptoCardSkeleton } from '@/entities/crypto-card/crypto-card-skeleton/crypto-card-skeleton';
+import { CoinType } from '@/types';
 
 interface Props {
   coins: CoinType[];

@@ -4,9 +4,8 @@ import { combineReducers, configureStore, Reducer } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { createLogger } from 'redux-logger';
 
-// import { emptySplitApi } from '@/shared/api/emptySplitApi';
+import { emptySplitApi } from '@/shared/api/emptySplitApi';
 
-import { emptySplitApi } from '../shared/api/emptySplitApi';
 import { uiSlice } from './ui/slice';
 // import { RESET_STATE_ACTION_TYPE } from './actions/resetState';
 

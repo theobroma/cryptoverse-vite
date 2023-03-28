@@ -1,8 +1,6 @@
-// import { LanguageEnum } from '@/enums/language.enum';
-// import { ThemeEnum } from '@/enums/theme.enum';
+import { LanguageEnum } from '@/enums/language.enum';
+import { ThemeEnum } from '@/enums/theme.enum';
 
-import { LanguageEnum } from '../../enums/language.enum';
-import { ThemeEnum } from '../../enums/theme.enum';
 import { setThemeAC, uiSlice, uiInitialState, setLanguageAC } from './slice';
 
 const uiReducer = uiSlice.reducer;
