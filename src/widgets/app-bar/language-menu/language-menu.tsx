@@ -8,15 +8,11 @@ import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import TranslateIcon from '@mui/icons-material/Translate';
 import { Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
 
-// import { useAppDispatch, useAppSelector } from '@/store/configureStore';
-// import { languageSelector } from '@/store/ui/selectors';
-// import { setLanguageAC } from '@/store/ui/slice';
-// import { BaseOptionInterface } from '@/types';
+import { useAppDispatch, useAppSelector } from '@/store/configureStore';
+import { languageSelector } from '@/store/ui/selectors';
+import { setLanguageAC } from '@/store/ui/slice';
+import { BaseOptionInterface } from '@/types';
 
-import { useAppDispatch, useAppSelector } from '../../../store/configureStore';
-import { languageSelector } from '../../../store/ui/selectors';
-import { setLanguageAC } from '../../../store/ui/slice';
-import { BaseOptionInterface } from '../../../types';
 import { languageMenuOptions } from './language-menu.options';
 
 export const LanguageMenu = () => {

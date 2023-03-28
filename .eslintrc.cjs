@@ -24,6 +24,17 @@ module.exports = {
     'eslint-plugin-import-helpers',
     'hooks',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+      typescript: {},
+      alias: {
+        map: [['@', './src']],
+      },
+    },
+  },
   rules: {
     'import-helpers/order-imports': [
       'error',
