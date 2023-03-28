@@ -4,8 +4,8 @@ import LinkIcon from '@mui/icons-material/Link';
 import { Grid, Box, Typography, Button } from '@mui/material';
 
 import { PageEnum } from '../../../enums/page.enum';
-import { CryptoList } from '../../../widgets/crypto-list/crypto-list';
 import { useGetCryptosQuery } from '../../../store/coins/api';
+import { CryptoList } from '../../../widgets/crypto-list/crypto-list';
 
 export const HomeTopCryptos = () => {
   const { data, error, isError, isFetching, isLoading, isSuccess } =

@@ -13,11 +13,11 @@ import { Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
 // import { setThemeAC } from '@/store/ui/slice';
 // import { BaseOptionInterface } from '@/types';
 
-import { themeOptions } from './theme-menu.options';
 import { useAppDispatch, useAppSelector } from '../../../store/configureStore';
 import { themeSelector } from '../../../store/ui/selectors';
 import { setThemeAC } from '../../../store/ui/slice';
 import { BaseOptionInterface } from '../../../types';
+import { themeOptions } from './theme-menu.options';
 
 export const ThemeMenu = () => {
   const dispatch = useAppDispatch();

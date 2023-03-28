@@ -1,7 +1,5 @@
 // import { Routing } from '@/pages';
-
 import { Routing } from '../pages';
-
 import './addons/fonts';
 import { withProviders } from './providers';
 

@@ -6,8 +6,8 @@ import { createLogger } from 'redux-logger';
 
 // import { emptySplitApi } from '@/shared/api/emptySplitApi';
 
-import { uiSlice } from './ui/slice';
 import { emptySplitApi } from '../shared/api/emptySplitApi';
+import { uiSlice } from './ui/slice';
 // import { RESET_STATE_ACTION_TYPE } from './actions/resetState';
 
 const logger = createLogger({

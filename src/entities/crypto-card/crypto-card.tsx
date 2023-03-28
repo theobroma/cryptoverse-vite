@@ -1,8 +1,8 @@
-import { Typography, Divider } from '@mui/material';
 import millify from 'millify';
 
-import { CoinType } from '../../types';
+import { Typography, Divider } from '@mui/material';
 
+import { CoinType } from '../../types';
 import { Item, CardBox1, CardBox2 } from './crypto-card.styles';
 
 interface Props {

@@ -13,11 +13,11 @@ import { Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
 // import { setLanguageAC } from '@/store/ui/slice';
 // import { BaseOptionInterface } from '@/types';
 
-import { languageMenuOptions } from './language-menu.options';
 import { useAppDispatch, useAppSelector } from '../../../store/configureStore';
+import { languageSelector } from '../../../store/ui/selectors';
 import { setLanguageAC } from '../../../store/ui/slice';
 import { BaseOptionInterface } from '../../../types';
-import { languageSelector } from '../../../store/ui/selectors';
+import { languageMenuOptions } from './language-menu.options';
 
 export const LanguageMenu = () => {
   const dispatch = useAppDispatch();

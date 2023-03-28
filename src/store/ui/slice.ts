@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { ThemeEnum } from '../../enums/theme.enum';
+
 import { LanguageEnum } from '../../enums/language.enum';
+import { ThemeEnum } from '../../enums/theme.enum';
 
 // import { LanguageEnum } from '@/enums/language.enum';
 // import { ThemeEnum } from '@/enums/theme.enum';

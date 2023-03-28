@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+
 import { PersistentDrawerLeft } from '../widgets/app-bar/app-bar';
 import { Footer } from '../widgets/footer/footer';
 

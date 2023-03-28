@@ -1,4 +1,5 @@
 import { Provider } from 'react-redux';
+
 import { store } from '../../store/configureStore';
 
 // import { store } from '@/store/configureStore';

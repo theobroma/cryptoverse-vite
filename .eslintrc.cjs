@@ -25,6 +25,19 @@ module.exports = {
     'hooks',
   ],
   rules: {
+    'import-helpers/order-imports': [
+      'error',
+      {
+        newlinesBetween: 'always', // new line between groups
+        groups: [
+          'module',
+          '/^@mui/',
+          '/^@/(app|entities|enums|features|pages|shared|store|types|widgets/)/',
+          ['parent', 'sibling', 'index'],
+        ],
+        alphabetize: { order: 'asc', ignoreCase: true },
+      },
+    ],
     'import/no-default-export': 'warn',
     'import/no-unresolved': 'error',
     'import/prefer-default-export': 0,
