@@ -120,8 +120,13 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'react/jsx-boolean-value': 'error',
+    'react/jsx-closing-bracket-location': [1, 'line-aligned'],
+    'react/jsx-curly-brace-presence': 'error',
+    'react/jsx-key': 'error',
     'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
     'react/jsx-props-no-spreading': 0,
+    'react/no-array-index-key': 'warn',
     'react/prop-types': 0, // Since we do not use prop-types
     'react/react-in-jsx-scope': 0, // Since React 18 "react-jsx"
     'react/require-default-props': 0, // Since we do not use prop-types
