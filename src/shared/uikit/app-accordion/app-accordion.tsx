@@ -9,7 +9,10 @@ interface Props {
   title?: React.ReactElement | string;
 }
 
-export const AppAccordion = ({ children, title }: PropsWithChildren<Props>) => {
+export const AppAccordion = ({
+  children,
+  title = '',
+}: PropsWithChildren<Props>) => {
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =

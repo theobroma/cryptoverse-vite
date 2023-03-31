@@ -1,18 +1,14 @@
-import { Container } from '@mui/material';
-
-import { AppAccordion } from '@/shared/uikit/app-accordion/app-accordion';
+import { Container, Grid } from '@mui/material';
 
 import { CryptoDetailsLinks } from './crypto-details-links/crypto-details-links';
 
 const CryptoDetailsPage = () => (
   <Container maxWidth="lg">
-    <div>
-      <span>CryptoDetailsPage</span>
-    </div>
-    <div>
-      <AppAccordion title="What is ?">AppAccordion</AppAccordion>
-    </div>
-    <CryptoDetailsLinks />
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
+        <CryptoDetailsLinks />
+      </Grid>
+    </Grid>
   </Container>
 );
 
