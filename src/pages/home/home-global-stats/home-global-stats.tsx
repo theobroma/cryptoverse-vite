@@ -11,7 +11,7 @@ export const HomeGlobalStats = () => {
     useGetCryptosQuery({ count: 10 });
   const globalStats = data?.data?.stats;
   //   const coins = data?.data?.coins;
-  console.log('globalStats :>> ', globalStats);
+  // console.log('globalStats :>> ', globalStats);
 
   return (
     <Box sx={{ flexGrow: 1 }}>

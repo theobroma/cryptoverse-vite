@@ -1,7 +1,7 @@
 // ! for Schema debug
 import { fromZodError } from 'zod-validation-error';
 
-import { CoinsResponseSchema } from '@/types';
+import { CoinDetailsResponseSchema, CoinsResponseSchema } from '@/types';
 
 export const ZodSchemasValidation = (url: string, res: any) => {
   const splittedUrl = url.split('?')[0];
@@ -17,6 +17,15 @@ export const ZodSchemasValidation = (url: string, res: any) => {
     if (asPathNestedRoutes[0] === 'coins') {
       console.log('CoinsResponseSchema:>> ');
       CoinsResponseSchema.parse(res.data);
+    }
+    // ============================================
+    if (
+      asPathNestedRoutes[0] === 'coin' &&
+      typeof asPathNestedRoutes[1] !== 'undefined' &&
+      typeof asPathNestedRoutes[2] === 'undefined'
+    ) {
+      console.log('CoinDetailsResponseSchema :>> ');
+      CoinDetailsResponseSchema.parse(res.data);
     }
     // ============================================
     // console.log('res.data :>> ', res.data);

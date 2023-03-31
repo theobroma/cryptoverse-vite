@@ -7,3 +7,21 @@ const LinksSchema = z.object({
 });
 
 export type LinksType = z.infer<typeof LinksSchema>;
+
+// just necessary fields
+export const CoinDetailsSchema = z.object({
+  uuid: z.string(),
+  name: z.string(),
+  links: z.array(LinksSchema),
+});
+
+export type CoinDetailsType = z.infer<typeof CoinDetailsSchema>;
+
+export const CoinDetailsResponseSchema = z.z.object({
+  data: z.object({
+    coin: CoinDetailsSchema,
+  }),
+  status: z.string(),
+});
+
+export type CoinDetailsResponseType = z.infer<typeof CoinDetailsResponseSchema>;

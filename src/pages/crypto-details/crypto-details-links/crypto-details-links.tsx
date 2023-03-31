@@ -6,7 +6,7 @@ import { Box, Grid, Link as MuiLink } from '@mui/material';
 
 import { AppAccordion } from '@/shared/uikit/app-accordion/app-accordion';
 import { useGetCryptoDetailsQuery } from '@/store/coins/api';
-import { IDRouteParams, LinksType } from '@/types';
+import { IDRouteParams } from '@/types';
 
 export const CryptoDetailsLinks = () => {
   const { id: coinId } = useParams<keyof IDRouteParams>() as IDRouteParams;
@@ -22,9 +22,9 @@ export const CryptoDetailsLinks = () => {
 
   return (
     <Grid item xs={12}>
-      <AppAccordion title={`${cryptoDetails.name} Links`}>
+      <AppAccordion title={`${cryptoDetails?.name} Links`}>
         <Box sx={{ typography: 'body1', ml: 2 }}>
-          {cryptoDetails.links?.map((link: LinksType) => (
+          {cryptoDetails?.links?.map((link) => (
             <Box key={nanoid()}>
               <span style={{ marginRight: '5px' }}>{link.type}</span>
               <MuiLink

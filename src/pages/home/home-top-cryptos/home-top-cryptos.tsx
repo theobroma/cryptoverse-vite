@@ -11,8 +11,7 @@ export const HomeTopCryptos = () => {
   const { data, error, isError, isFetching, isLoading, isSuccess } =
     useGetCryptosQuery({ count: 10 });
   const coins = data?.data?.coins || [];
-
-  console.log('coins :>> ', coins);
+  // console.log('coins :>> ', coins);
 
   return (
     <>
