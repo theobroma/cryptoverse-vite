@@ -1,23 +1,16 @@
+// https://redux-toolkit.js.org/rtk-query/usage-with-typescript#error-result-example
 import { Alert, Stack } from '@mui/material';
 
-type Props = {
-  error: any;
-};
+interface Props {
+  error: unknown;
+}
 
 export const AppError = ({ error }: Props) => {
-  let err = '';
-
-  // console.log('typeof error', typeof error);
-
-  if (typeof error === 'string') {
-    err = error;
-  } else {
-    err = JSON.stringify(error);
-  }
+  const errMsg = typeof error === 'string' ? error : JSON.stringify(error);
 
   return (
     <Stack sx={{ width: '100%' }} spacing={2}>
-      <Alert severity="error">{err}</Alert>
+      <Alert severity="error">{errMsg}</Alert>
     </Stack>
   );
 };

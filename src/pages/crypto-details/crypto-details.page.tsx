@@ -2,6 +2,8 @@ import { Container } from '@mui/material';
 
 import { AppAccordion } from '@/shared/uikit/app-accordion/app-accordion';
 
+import { CryptoDetailsLinks } from './crypto-details-links/crypto-details-links';
+
 const CryptoDetailsPage = () => (
   <Container maxWidth="lg">
     <div>
@@ -10,6 +12,7 @@ const CryptoDetailsPage = () => (
     <div>
       <AppAccordion title="What is ?">AppAccordion</AppAccordion>
     </div>
+    <CryptoDetailsLinks />
   </Container>
 );
 
