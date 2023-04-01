@@ -12,8 +12,13 @@ export type LinksType = z.infer<typeof LinksSchema>;
 export const CoinDetailsSchema = z.object({
   uuid: z.string(),
   name: z.string(),
+  price: z.string(),
+  rank: z.number(),
+  marketCap: z.string(),
+  '24hVolume': z.string(),
   description: z.string(),
   links: z.array(LinksSchema),
+  allTimeHigh: z.object({ price: z.string(), timestamp: z.number() }),
 });
 
 export type CoinDetailsType = z.infer<typeof CoinDetailsSchema>;

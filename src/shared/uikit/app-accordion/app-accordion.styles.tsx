@@ -2,7 +2,7 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordionSummary, {
   AccordionSummaryProps,
 } from '@mui/material/AccordionSummary';
-import { styled } from '@mui/material/styles';
+import { alpha, styled } from '@mui/material/styles';
 
 export const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
@@ -23,4 +23,20 @@ export const AccordionSummary = styled((props: AccordionSummaryProps) => (
   '& .MuiAccordionSummary-content': {
     marginLeft: theme.spacing(1),
   },
+}));
+
+export const AccordionLabel = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  color: alpha(theme.palette.common.black, 0.5),
+  '& .MuiTypography-root': {
+    fontSize: '16px',
+    fontWeight: 400,
+  },
+}));
+
+export const AccordionLabelIcon = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  marginRight: '15px',
 }));
