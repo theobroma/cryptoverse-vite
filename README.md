@@ -1,14 +1,27 @@
-## [vite](https://vitejs.dev/) + [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) Starter
+# Cryptoverse - Explore the World of Cryptocurrency
 
-This setup includes:
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/ad91f5bf-faa6-4570-b0fd-64d3d3a22ae0/deploy-status)](https://app.netlify.com/sites/astounding-kangaroo-d62298/deploys) -->
 
-- [vite](https://vitejs.dev/)
-- [eslint](https://eslint.org/), [typescript-eslint](https://typescript-eslint.io/), [eslint-airbnb-config](https://github.com/airbnb/javascript), [prettier](https://prettier.io/)
-- [vitest](https://vitest.dev/), [jsdom](https://github.com/jsdom/jsdom), [@testing-library](https://testing-library.com/)
-- [react-router v6](https://reactrouter.com/en/main)
+![GitHub top language](https://img.shields.io/github/languages/top/theobroma/cryptoverse-vite)
+[![FeatureSliced](https://img.shields.io/badge/Powered%20by-%F0%9F%8D%B0%20Feature%20Sliced-%235c9cb5)](https://feature-sliced.design/)
 
-# References
+##### React & Material UI application.
 
-- https://markus.oberlehner.net/blog/using-testing-library-jest-dom-with-vitest/
-- https://testing-library.com/docs/queries/about#priority
-- https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+Powered by Coinranking API:
+
+- [RapidAPI](https://rapidapi.com/Coinranking/api/coinranking1/)
+- [Original API](https://developers.coinranking.com/api)
+
+## ⭐️ Built With
+
+This project was built using these technologies.
+
+- [React.js v18](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org)
+- [Material UI v5](https://mui.com/)
+
+## ✨ Features
+
+- 🌈 RTK Query: management of cached data.
+- 💅 Skeletons: display a placeholder preview of content before the data gets loaded to reduce load-time frustration.
+- 🚀 [FSD](https://feature-sliced.design/): architectural methodology for scaffolding front-end applications.
