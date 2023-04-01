@@ -17,6 +17,13 @@ export const CoinDetailsSchema = z.object({
   marketCap: z.string(),
   '24hVolume': z.string(),
   description: z.string(),
+  numberOfMarkets: z.number(),
+  numberOfExchanges: z.number(),
+  supply: z.object({
+    confirmed: z.boolean(),
+    total: z.string(),
+    circulating: z.string(),
+  }),
   links: z.array(LinksSchema),
   allTimeHigh: z.object({ price: z.string(), timestamp: z.number() }),
 });
