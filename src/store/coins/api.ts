@@ -20,8 +20,22 @@ const cryptosAPI = emptySplitApi.injectEndpoints({
       }),
       // providesTags: ['CryptoDetails'],
     }),
+    getCryptoHistory: builder.query<
+      any,
+      { coinId: CoinType['uuid']; timeperiod: string }
+    >({
+      query: ({ coinId, timeperiod }) => ({
+        url: `/coin/${coinId}/history/?timePeriod=${timeperiod}`,
+        method: 'get',
+      }),
+      // providesTags: ['CryptoHistory'],
+    }),
   }),
   overrideExisting: false,
 });
 
-export const { useGetCryptosQuery, useGetCryptoDetailsQuery } = cryptosAPI;
+export const {
+  useGetCryptosQuery,
+  useGetCryptoDetailsQuery,
+  useGetCryptoHistoryQuery,
+} = cryptosAPI;
