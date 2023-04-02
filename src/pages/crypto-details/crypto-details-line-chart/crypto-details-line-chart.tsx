@@ -19,7 +19,7 @@ export const CryptoDetailsLineChart = () => {
     { skip: !coinId },
   );
 
-  console.log('coinHistory :>> ', coinHistory);
+  //   console.log('coinHistory :>> ', coinHistory);
 
   return (
     <div>

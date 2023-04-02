@@ -1,5 +1,10 @@
 import { emptySplitApi } from '@/shared/api/emptySplitApi';
-import { CoinDetailsResponseType, CoinType, CoinsResponseType } from '@/types';
+import {
+  CoinDetailsResponseType,
+  CoinHistoryResponseType,
+  CoinType,
+  CoinsResponseType,
+} from '@/types';
 
 const cryptosAPI = emptySplitApi.injectEndpoints({
   endpoints: (builder) => ({
@@ -21,7 +26,7 @@ const cryptosAPI = emptySplitApi.injectEndpoints({
       // providesTags: ['CryptoDetails'],
     }),
     getCryptoHistory: builder.query<
-      any,
+      CoinHistoryResponseType,
       { coinId: CoinType['uuid']; timeperiod: string }
     >({
       query: ({ coinId, timeperiod }) => ({
